@@ -1,5 +1,24 @@
-body {
+body, html {
+  height: 100%;
   margin: 0;
+  font-family: Georgia, serif;
+}
+
+.img-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/doan/image/upload/v1547661446/hextile_tkou1b.png");
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.img-section-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 nav ul {
@@ -30,6 +49,72 @@ nav li a:hover {
   background-color: #111;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+.container > div {
+  margin: 10px;
+  text-align: center;
+}
+
+.profile {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.profile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.profile-content {
+  margin-bottom: 5px;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
 i {
   font-size: 3rem;
+  margin: 0 10px;
+}
+
+.fa-youtube-square {
+  background-color: white;
+  color: #f4511e;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.fa-facebook-square {
+  background-color: white;
+  color: #4267B2;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.fa-twitter-square {
+  background-color: white;
+  color: #1DA1F2;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.fa-youtube-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover {
+  opacity: 1
+}
+
+.center {
+  margin: 0 40%;
+  text-align: center;
+}
+
+.bacon-center {
+  max-width: 500px;
+  margin: auto;
 }

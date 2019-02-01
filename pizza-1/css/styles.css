@@ -33,7 +33,7 @@ nav li a:hover {
 }
 
 .home-title {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/home-pizza.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ nav li a:hover {
 }
 
 .order-title {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1511516457495-002cdd242a2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/order-pizza.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ nav li a:hover {
 }
 
 .contact-title {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1536194309363-677b2608a921?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/contact-pizza.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@ nav li a:hover {
 }
 
 .about-title {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1543932141-1f40ce9163b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/about-pizza.jpeg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,4 +75,53 @@ nav li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.input-container > i {
+  padding: 10px;
+  background: Crimson;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-container > input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-container > input:focus {
+  border: 2px solid Crimson;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.btn-container {
+  display: inline;
+  text-align: center;
+  margin: 0 100px;
+}
+
+.btn {
+  background-color: Crimson;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
 }

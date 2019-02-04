@@ -1,0 +1,29 @@
+.logo {
+  max-height: 145px;
+  padding: 10px;
+}
+
+.img-container {
+  text-align: center;
+  background-color: aliceblue;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+
+a:hover, a:active {
+  background-color: red;
+}

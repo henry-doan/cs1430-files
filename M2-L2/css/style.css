@@ -1,0 +1,40 @@
+p {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  text-align: left;
+  background-color: #f79282;
+  color: white;
+}
+
+.cool {
+  font-style: italic;
+  color: orangered;
+  display: block;
+}
+
+#head1 {
+  color: purple;
+  font-style: oblique;
+}
+
+.big-head {
+  font-size: 30px;
+  color: indianred;
+  text-align: center;
+}
+
+#right {
+  color: orange;
+  text-align: right;
+  background-color: lavender;
+}
+
+p.center {
+  text-align: center;
+  color: green;
+}
+
+#super {
+  background-color: hotpink;
+  color: blue;
+}

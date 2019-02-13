@@ -38,3 +38,32 @@ p.center {
   background-color: hotpink;
   color: blue;
 }
+
+div {
+  background-color: orange;
+  color: plum;
+  padding: 10px 20px;
+}
+
+p.testing {
+  background-color: papayawhip;
+}
+
+div p {
+  background-color: rgba(0, 0, 12, 1);
+  /* default is static */
+  position: fixed;
+  top: 0;
+  left: 7;
+  /* line-spacing: 5px; */
+  z-index: -1;
+}
+
+img {
+  width: 250px;
+  float: right;
+}
+
+div {
+  background-image: linear-gradient(to right, cornsilk, aqua);
+}

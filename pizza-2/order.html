@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pizza Shop 2</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li class="home-nav">
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a class='active' href="order.html">Order</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="order-title">
+    <div class="hero-text">
+      <h1>Order Pizza</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <br />
+    <br />
+    <br />
+    <form name="orderInfo" action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="post">
+      <input type='radio' name='crust' value='Thick' />Thick
+      <input type='radio' name='crust' value='Thin' />Thin
+      <input type='radio' name='crust' value='Deep Dish' />Deep Dish
+      
+      <input type='checkbox' name="toppings[]"  value='Pepperoni' /> Pepperoni
+      <input type='checkbox' name="toppings[]"  value='Chesse' /> Chesse
+      <input type='checkbox' name="toppings[]"  value='Bacon' /> Bacon
+      <input type='checkbox' name="toppings[]"  value='Green Peppers' /> Green Peppers
+      <input type='checkbox' name="toppings[]"  value='Pineapple' /> Pineapple
+      <input type='checkbox' name="toppings[]"  value='Sasausage' /> Sasausage
+      <input type='checkbox' name="toppings[]"  value='Ham' /> Ham
+      
+      <select name="size" id="">
+        <option value="Mini">Mini</option>
+        <option value="Small">Small</option>
+        <option value="Large">Large</option>
+        <option value="Party">Party Size</option>
+      </select>
+      
+      <h3 style="text-align: center;">Info</h3>
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input type="text" name="first" id="first" maxlength="30" placeholder="First Name" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-user-tag icon"></i>
+        <input type="text" name="last" id="last" maxlength="30" placeholder="Last Name" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-map-marker-alt icon"></i>
+        <input type="text" name="add1" id="add1" maxlength="50" placeholder="Address 1" />
+      </div>
+      <div class="input-container ">
+        <i class="fa fa-map-marked icon"></i>
+        <input type="text" name="add2" id="add2" maxlength="50" placeholder="Address 2" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-city icon"></i>
+        <input type="text" name="city" id="city" maxlength="30" placeholder="City" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-flag-usa icon"></i>
+        <input type="text" name="state" id="state" maxlength="30" placeholder="State" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-map-pin icon"></i>
+        <input type="text" name="zip" id="zip" maxlength="5" placeholder="Zip" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-phone"></i>
+        <input type="text" name="phone" id="phone" maxlength="20" placeholder="Phone" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-envelope icon"></i>
+        <input type="text" name="email" id="email" maxlength="50" placeholder="Email" />
+      </div>
+      <div class="input-container">
+        <i class="fa fa-comment icon"></i>
+        <textarea name="comments" id="comments" cols="100" rows="10" placeholder="Comments"></textarea>
+      </div>
+      <div class="btn-container">
+        <input type="submit" value="Submit" class="btn" />
+        <input type="reset" value="Reset" class="btn" />
+      </div>
+    </form>
+    <br />
+    <br />
+    <br />
+  </div>
+
+</body>
+
+</html>

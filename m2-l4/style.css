@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu {
+  background-color: red;
+  border: 5px solid yellow;
+  text-align: center;
+  padding: 2%;
+}
+
+ul.menu li {
+  display: inline-block;
+}
+
+ul.menu li a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: cyan;
+  border: 50%;
+}
+
+ul.menu li a:hover, ul.menu li a.active {
+  color: white;
+  background-color: green;
+}

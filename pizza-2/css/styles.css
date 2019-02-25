@@ -125,3 +125,64 @@ form {
 .btn:hover {
   opacity: 1;
 }
+
+.history-section {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.history-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.history-text {
+  width: 60%;
+  float: left;
+}
+
+.history-img {
+  width: 30%;
+  float: right;
+}
+
+.mission-state {
+  background-color: #EEEEEE;
+  text-align: center;
+  height: 300px;
+  display: grid;
+  place-content: center;
+  color: #808080;
+}
+
+.mission-state-text {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.chefs {
+  width: 400px;
+}
+
+.chef-section {
+  display: inline;
+  text-align: center;
+  margin: 0 auto;
+  clear: both;
+}
+
+.column-left{ 
+  float: left; 
+  width: 33%; 
+}
+
+.column-right { 
+  float: right; 
+  width: 33%; 
+}
+
+.column-center { 
+  display: inline-block; 
+  width: 33%; 
+}

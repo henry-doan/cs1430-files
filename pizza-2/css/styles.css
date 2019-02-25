@@ -262,3 +262,12 @@ form {
 	background: white;
   border-radius: 50%;
 }
+
+.fa-pizza-slice {
+  font-size: 100px;
+  color: crimson;
+}
+
+.pizza-form-title {
+  text-align: center;
+}

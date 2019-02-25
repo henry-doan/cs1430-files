@@ -213,8 +213,6 @@ form {
   cursor: pointer;
 }
 
-
-
 .checkbox input, .radio input {
   position: absolute;
   opacity: 0;
@@ -270,4 +268,107 @@ form {
 
 .pizza-form-title {
   text-align: center;
+}
+
+/* home  */
+
+.feat-section {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.feat-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.feat-text {
+  width: 60%;
+  float: left;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.feat-img {
+  width: 30%;
+  float: right;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.button {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.steps {
+  display: inline-block;
+}
+
+.step1 {
+  float: left;
+}
+
+.step2 {
+  float: right;
+}
+
+.fresh-section {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.fresh-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fresh-img {
+  width: 40%;
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.fresh-text {
+  width: 50%;
+  float: right;
+  display: grid;
+  place-content: center;
+  text-align: left;
+}
+
+.number-circle {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-content: center;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  margin: 0 auto;
+}
+
+.step-section {
+  background-color: #EEEEEE;
+  text-align: center;
+  height: 500px;
+  display: grid;
+  place-content: center;
+  color: #808080;
 }

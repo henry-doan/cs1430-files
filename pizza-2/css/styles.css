@@ -313,15 +313,7 @@ form {
 }
 
 .steps {
-  display: inline-block;
-}
-
-.step1 {
-  float: left;
-}
-
-.step2 {
-  float: right;
+  display: block;
 }
 
 .fresh-section {

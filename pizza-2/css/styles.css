@@ -126,6 +126,7 @@ form {
   opacity: 1;
 }
 
+/* about page  */
 .history-section {
   width: 70%;
   margin: 40px auto;
@@ -145,6 +146,9 @@ form {
 .history-img {
   width: 30%;
   float: right;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .mission-state {
@@ -185,4 +189,16 @@ form {
 .column-center { 
   display: inline-block; 
   width: 33%; 
+}
+
+/* contact page */
+
+.map {
+  text-align: center;
+}
+
+.contact-container {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }

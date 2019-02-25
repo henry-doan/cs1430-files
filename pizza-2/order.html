@@ -35,30 +35,76 @@
   </div>
 
   <div class="container">
-    <p>
+    <br />
+    <br />
+    <br />
+    <h3 class="text-container">
       Order our fresh, made daily pizza  
       with premium, organic ingredients, grow fresh 
       from our garden and farm. Each pizza is 
       made from our excellent staff with a secret
       frenchtalian recipe from Chef from Executive
       Chef Christian Macchiato himself!
-    </p>
+    </h3>
     <br />
     <br />
     <br />
     <form name="orderInfo" action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="post">
-      <input type='radio' name='crust' value='Thick' />Thick
-      <input type='radio' name='crust' value='Thin' />Thin
-      <input type='radio' name='crust' value='Deep Dish' />Deep Dish
-      
-      <input type='checkbox' name="toppings[]"  value='Pepperoni' /> Pepperoni
-      <input type='checkbox' name="toppings[]"  value='Chesse' /> Chesse
-      <input type='checkbox' name="toppings[]"  value='Bacon' /> Bacon
-      <input type='checkbox' name="toppings[]"  value='Green Peppers' /> Green Peppers
-      <input type='checkbox' name="toppings[]"  value='Pineapple' /> Pineapple
-      <input type='checkbox' name="toppings[]"  value='Sasausage' /> Sasausage
-      <input type='checkbox' name="toppings[]"  value='Ham' /> Ham
-      
+      <h3 style="text-align: center;">Pizza Order</h3>
+      <div class='crest'>
+        <h4>Crest</h4>
+        <label class="radio">Thick
+          <input type="radio" name='crust' value='Thick'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio">Thin
+          <input type="radio" name='crust' value='Thin'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="radio">Deep Dish
+          <input type="radio" name='crust' value='Deep Dish'>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <br />
+      <div class='toppings'>
+        <h4>Toppings</h4>
+        <label class="checkbox">Pepperoni
+          <input type="checkbox" name="toppings[]" value='Pepperoni'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Chesse
+          <input type="checkbox" name="toppings[]" value='Chesse'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Bacon
+          <input type="checkbox" name="toppings[]" value='Bacon'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Green Peppers
+          <input type="checkbox" name="toppings[]" value='Green Peppers'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Pineapple
+          <input type="checkbox" name="toppings[]" value='Pineapple'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Sasausage
+          <input type="checkbox" name="toppings[]" value='Sasausage'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Ham
+          <input type="checkbox" name="toppings[]" value='Ham'>
+          <span class="checkmark"></span>
+        </label>
+        <label class="checkbox">Mushrooms
+          <input type="checkbox" name="toppings[]" value='Mushrooms'>
+          <span class="checkmark"></span>
+        </label>
+
+      </div>
+      <br />
+      <h4>Size</h4>
       <select name="size" id="">
         <option value="Mini">Mini</option>
         <option value="Small">Small</option>
@@ -66,7 +112,7 @@
         <option value="Party">Party Size</option>
       </select>
       
-      <h3 style="text-align: center;">Info</h3>
+      <h3 style="text-align: center;">Delivery Info</h3>
       <div class="input-container">
         <i class="fa fa-user icon"></i>
         <input type="text" name="first" id="first" maxlength="30" placeholder="First Name" />

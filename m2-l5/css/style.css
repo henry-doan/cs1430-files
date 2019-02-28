@@ -1,0 +1,120 @@
+p {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  text-align: left;
+  background-color: #f79282;
+  color: white;
+}
+
+.cool {
+  font-style: italic;
+  color: orangered;
+  display: block;
+}
+
+#head1 {
+  color: purple;
+  font-style: oblique;
+}
+
+.big-head {
+  font-size: 30px;
+  color: indianred;
+  text-align: center;
+}
+
+#right {
+  color: orange;
+  text-align: right;
+  background-color: lavender;
+}
+
+p.center {
+  text-align: center;
+  color: green;
+}
+
+#super {
+  background-color: hotpink;
+  color: blue;
+}
+
+div {
+  background-color: orange;
+  color: plum;
+  padding: 10px 20px;
+}
+
+p.testing {
+  background-color: papayawhip;
+}
+
+div p {
+  background-color: rgba(0, 0, 12, 1);
+  /* default is static */
+  position: fixed;
+  top: 0;
+  left: 7;
+  /* line-spacing: 5px; */
+  z-index: -1;
+}
+
+img {
+  width: 250px;
+  float: right;
+}
+
+/* div {
+  background-image: linear-gradient(to right, cornsilk, aqua);
+} */
+
+.extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.outer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+a {
+  transition: all 300ms;
+}
+
+a:hover {
+  color: indianred;
+  background-color: gold;
+  font-size: 55px;
+  transform: rotate(15deg);
+}
+
+div.outer div:first-child {
+  background-color: aquamarine;
+  flex: 3;
+  order: 2;
+}
+
+div.outer div:nth-child(2) {
+  background-color: moccasin;
+  flex: 1;
+}
+
+div.outer div:last-child {
+  background-color: aqua;
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  display: block;
+  font-family: tohama;
+  font-size: 30px;
+  color: tomato;
+  text-decoration: none;
+}

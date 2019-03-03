@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #65D189;  
+}
+
+nav img {
+  float: left;
+  width: 200px;
+  padding-left: 40px;
+}
+
+nav a li {
+  color: black;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline;
+}
+
+nav a {
+  padding: 12px 0;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+nav li:hover {
+  color: white;
+}
+
+nav a:first-child {
+  border-bottom: 3px solid black;
+}
+
+nav ul {
+  padding-top: 40px;
+  float: right;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/jungle.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.header h2 {
+  text-align: center;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.fact-section, .ref-section {
+  width: 40%;
+  text-align: left;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.fact-section:hover, .ref-section:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.fact-section ul, .ref-section ul {
+  margin: 0 auto;
+}
+
+.fact-section ul li, .ref-section ul li {
+  list-style-type: none;
+  line-height: 24px;
+}
+
+.about-outer, .super-outer {
+  width: 100%;
+  background-color: #65D189;  
+  padding: 40px 0;
+  color: rgb(255, 255, 255);
+}
+
+.about-section, .super-section {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.about-section:after, .super-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-section p, .super-section p {
+  width: 50%;
+  float: left;
+  display: grid;
+  place-content: center;
+  text-align: left;
+}
+
+.about-section p {
+  height: 300px;
+}
+
+.about-section img, .super-section img{
+  width: 30%;
+  float: right;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+.diet-section {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.diet-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.diet-section img {
+  width: 40%;
+  float: left;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.diet-section p, .diet-section ul, .diet-section h4 {
+  width: 50%;
+  float: right;
+  display: grid;
+  place-content: center;
+  text-align: left;
+}

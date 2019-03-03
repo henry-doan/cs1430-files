@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #65D189; 
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+nav img {
+  float: right;
+  width: 200px;
+  padding-left: 40px;
+}
+
+nav a li {
+  color: black;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline;
+}
+
+nav a {
+  padding: 12px 0;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+nav li:hover {
+  color: white;
+}
+
+nav ul {
+  padding-top: 40px;
+  float: left;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.header {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../imgs/jungle-river.jpeg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+}
+
+.header h2 {
+  text-align: center;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.fact-section, .ref-section {
+  height: 50%;
+  text-align: left;
+  margin: 50px auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5% 0;
+}
+
+.fact-section ul {
+  padding: 10% 0;
+}
+
+.about-outer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  margin-bottom: 140px;
+  padding: 30px;
+}
+
+.about-section img {
+  width: 400px;
+}
+
+.diet-outer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../imgs/waterfall.jpeg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.diet-section {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  padding: 30px;
+  background: white;
+}
+
+.diet-section img {
+  width: 400px;
+}
+
+.super-outer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.super-section {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  padding: 30px;
+}
+
+.super-section img {
+  width: 400px;
+}

@@ -33,7 +33,7 @@ nav a {
 
 }
 
-nav a li {
+nav ul li {
   list-style-type: none;
 }
 
@@ -84,7 +84,12 @@ h1 {
 }
 
 .about-section img, .diet-section img, .super-section img {
-  width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-section img {
+   height: 50%;
 }
 
 h4 {

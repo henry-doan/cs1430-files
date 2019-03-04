@@ -15,29 +15,30 @@ nav img {
   padding-left: 40px;
 }
 
-nav a li {
+nav li a {
   color: black;
   text-align: center;
   padding: 14px 40px;
   text-decoration: none;
   font-size: 20px;
+  
+}
+
+nav li {
+  padding: 12px 0;
+  text-decoration: none;
   display: inline;
 }
 
-nav a {
-  padding: 12px 0;
-  text-decoration: none;
-}
-
-nav a:hover {
+nav li:hover {
   border-bottom: 3px solid white;
 }
 
-nav li:hover {
+nav a:hover {
   color: white;
 }
 
-nav a:first-child {
+nav li:first-child {
   border-bottom: 3px solid black;
 }
 

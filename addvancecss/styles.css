@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  border: 1px solid black;
+  width: 100%;
+  height: 75px;
+}
+
+div:hover {
+  background-color: darkred;
+}
+
+div:first-child {
+  background-color: tomato;
+}
+
+div:nth-last-child(3) {
+  background-color: springgreen;
+}
+
+
+/* every third row starting at 5 */
+/* div:nth-child(3n + 5) {
+  background-color: firebrick;
+} */
+
+/* div:nth-child(odd) {
+  background-color: firebrick;
+}
+
+div:nth-child(even) {
+  background-color: wheat;
+} */
+
+/* target html base on attributes */
+
+img {
+  width: 300px;
+}
+
+img[alt] {
+  border: 3px solid red;
+}
+
+/* exact */
+img[alt="Pic of sand"] {
+  border: 3px solid blue;
+  border-style: outset;
+}
+
+/* anything */
+img[alt*="Pile"] {
+  border: 3px solid greenyellow;
+  border-style: outset;
+}
+/* 
+~= has this value in a space-separated list somewhere 
+^= value starts with this 
+|= value starts with this in a dash-separated list 
+$= value ends with this */
+
+a[href ^= 'http'] {
+  color: aquamarine;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+a[href $= 'html'] {
+  color: thistle;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div[class ^= "main-"] {
+  background-color: thistle;
+}
+/* same  */
+div[class |= "main"] {
+  background-color: thistle;
+}
+
+
+div ul li {
+  margin: 5px;
+}
+
+/* just the child */
+div > ul > li > ul {
+  color: turquoise;
+}
+
+/* Child (Direct Descendants [>] vs. all descendants)
+Adjacent sibling combinator (+) - Direct siblings with nothing in between
+General Sibling combinator (~) - All elements following  */
+/* p + p {
+  color: pink;
+} */
+
+/* Pseudo Elements
+::after
+::before
+::first-letter
+::first-line */
+
+p {
+  padding: 20px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* not in ie, so if ie then : */
+
+p::before {
+  content: 'HELLO';
+}
+
+p::first-letter{
+  font-size: 2px;
+}
+
+p::first-line{
+  font-size: 20px;
+}

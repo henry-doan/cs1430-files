@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  /* position: relative;
+  animation: animate-menu 3s ease-in-out; */
+}
+
+/* div {
+  background-color: darkblue;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  animation: animate-menu 3s ease-in-out;
+}
+
+ul li, ul li a {
+  display: inline-block;
+}
+
+ul {
+  background-color: tomato;
+  text-align: right;
+}
+
+a:hover {
+  transform: rotate(10deg);
+}
+
+ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  color: goldenrod;
+  background-color: cornsilk;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px 20px;  
+  animation: animate-menu 2s linear;
+} */
+
+div {
+  background-color: darkturquoise;
+  opacity: .75;
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+                   /* duration delay  */
+  animation: balloon 0.25s 3s infinite;
+}
+
+/* 
+  3 rules 
+  - create animation
+  - name the animation
+  - use the animation 
+  doesn't work on position static
+  best at position relative
+*/
+
+@keyframes balloon {
+  0%, 100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+
+  50% {
+    transform: translateY(0) rotate(8deg);
+  }
+}
+
+@keyframes animate-menu {
+  /* from {
+    left: -1500px;
+  }
+  to {
+    left: 0px;
+  } */
+  0% , 100%{
+    left: -1500px;
+    /* background-color: firebrick; */
+    color: white;
+  }
+  10% {
+    top: -5px;
+  }
+  20% {
+    top: 5px;
+  }
+  30% {
+    top: -5px;
+  }
+  40% {
+    top: 5px;
+  }
+  50% {
+    top: -5px;
+    transform: rotate(360deg);
+  }
+  60% {
+    top: 5px;
+  }
+  70% {
+    top: -5px;
+  }
+  80% {
+    top: 5px;
+  }
+  90% {
+    top: -5px;
+  }
+  100% {
+    left: 0px;
+    /* background-color: indianred; */
+  }
+}

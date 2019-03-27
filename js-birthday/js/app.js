@@ -12,6 +12,7 @@ function message() {
     }
   }
   document.getElementById('msg').innerHTML = txt;
+  changePage()
 }
 
 function ordinalSuffix(incomingAge) {
@@ -27,4 +28,8 @@ function ordinalSuffix(incomingAge) {
     return incomingAge + "rd";
   }
   return incomingAge + "th";
+}
+
+function changePage() {
+  document.getElementById("main").classList.add('changed');
 }

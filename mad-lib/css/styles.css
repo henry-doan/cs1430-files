@@ -1,0 +1,119 @@
+body {
+  background-image: url('../img/dark-paths/dark-paths.png')
+}
+
+#resetBtn {
+  display: none;
+}
+
+.title {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+h1, p {
+  margin: 5% 0;
+  font-family: 'Germania One', cursive;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+}
+
+.book {
+  height: 80%;
+  max-height: 600px;
+  min-height: 400px;
+  width: 900px;
+  background-image: 
+    linear-gradient(
+      90deg,
+      hsl(30,40%,50%),
+      rgb(61, 44, 26),
+      hsl(30,40%,50%) 
+    );
+  position: absolute;
+  top: 150px; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  margin: auto;
+  border: 3px solid rgb(74, 48, 19);
+  border-radius: 5px;
+  box-shadow: 0 0 150px hsla(170,0%,0%,.4);
+}
+
+.page {
+  height: 100%;
+  width: 50%;
+	line-height: 1.5;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+
+.side {
+  height: 92%;
+  width: 86%;
+  position: absolute;
+  background-color: hsl(30,40%,70%);
+  background-image: 
+    linear-gradient(
+      90deg,
+      rgb(64, 47, 28),
+      hsla(30,40%,50%,.4) 
+    );
+  overflow: auto;
+  padding: 5% 8%;
+}
+
+#inputs {
+  margin: 40px 40px;
+}
+
+.input-container {
+  display: flex;
+  width: 350px;
+  margin-bottom: 5px;
+}
+
+.input-container > label {
+  padding: 10px;
+  background: #008CBA;
+  color: white;
+  min-width: 150px;
+  text-align: center;
+}
+
+.input-container > input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-container > input:focus {
+  border: 2px solid #008CBA;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 100px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: #008CBA; 
+  border: 2px solid #008CBA;
+}
+
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}

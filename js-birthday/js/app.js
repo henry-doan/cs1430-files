@@ -3,10 +3,16 @@ function message() {
   var name = prompt("Please Enter Your Name:");
   if (name == null || name == '') {
     txt = "Too Bad, Maybe Next time!";
+    document.getElementById('msg').innerHTML = txt;
+    document.getElementById('msg').style.color = 'black';
+    document.getElementById('card').style.display = 'none';
   } else {
     var age = prompt("How Old Are You?");
     if (age == null || age == '') {
       txt = "Darn, So Close!";
+      document.getElementById('msg').innerHTML = txt;
+      document.getElementById('msg').style.color = 'black';
+      document.getElementById('card').style.display = 'none';
     } else {
       txt = "Happy " + ordinalSuffix(age) + " Birthday " + name + "!🎈";
       document.getElementById('msg').innerHTML = txt;

@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background-image: url('../img/diagonal_striped_brick/diagonal_striped_brick.png');
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -58,7 +63,38 @@ button {
   text-align: center;
 }
 
+#wish {
+  margin-top: 375px;
+}
+
+#msg {
+  position: relative;
+  animation: animate-lt 5s 3s !important;
+}
 
 #wish {
-  margin-top: 400px;
+  position: relative;
+  animation: animate-rt 7s 3s !important;
+}
+
+@keyframes animate-lt {
+   from {
+    left: -1500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes animate-rt {
+   from {
+    right: -1500px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+p {
+  margin: 0;
 }

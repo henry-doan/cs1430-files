@@ -8,11 +8,14 @@ function message() {
     if (age == null || age == '') {
       txt = "Darn, So Close!";
     } else {
-      txt = "Happy " + ordinalSuffix(age) + " Birthday " + name + "!";
+      txt = "Happy " + ordinalSuffix(age) + " Birthday " + name + "!🎈";
+      document.getElementById('msg').innerHTML = txt;
+      document.getElementById('wish').innerHTML = "🎂 Make A Wish! 🎉";
+      document.getElementById('card').style.display = 'none';
+      changePage()
     }
   }
-  document.getElementById('msg').innerHTML = txt;
-  changePage()
+  
 }
 
 function ordinalSuffix(incomingAge) {

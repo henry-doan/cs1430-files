@@ -17,8 +17,10 @@ function storyTelling() {
   came out of nowhere and ${verb2} to ${person}. Which 
   then left ${person} to be 
   ${adj3} forever. The End...`
-
+  var header = `The ${adj1} Story of ${person}`
+  
   document.getElementById('story').insertAdjacentHTML('beforeend', story )
+  document.getElementById('header').insertAdjacentHTML('beforeend', header )
   document.getElementById('inputs').style.display = 'none'
   document.getElementById('resetBtn').style.display = 'block'
 }

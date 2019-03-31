@@ -15,11 +15,15 @@ body {
 h1, p {
   margin: 5% 0;
   font-family: 'Germania One', cursive;
+  color: white;
 }
 
 p {
   font-size: 30px;
-  color: white;
+}
+
+h1 {
+  text-align: center;
 }
 
 .book {
@@ -35,7 +39,7 @@ p {
       hsl(30,40%,50%) 
     );
   position: absolute;
-  top: 150px; 
+  top: 200px; 
   left: 0; 
   bottom: 0; 
   right: 0;

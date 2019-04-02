@@ -9,6 +9,7 @@ function lottery() {
   var fullArr = arr.join('-')
 
   document.getElementById('output').innerHTML = fullArr
+  document.getElementById('inner').className = 'flipping'
 }
 
 function randomNum() {

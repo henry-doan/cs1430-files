@@ -9,9 +9,14 @@ function lottery() {
   var fullArr = arr.join('-')
 
   document.getElementById('output').innerHTML = fullArr
-  document.getElementById('inner').className = 'flipping'
+  document.getElementById('front').style.display = 'none'
+  document.getElementById('back').style.display = 'block'
 }
 
 function randomNum() {
   return ('0' + (Math.floor(Math.random() * 99) + 1) ).slice(-2)
+}
+
+function reset() {
+  location.reload()
 }

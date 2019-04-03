@@ -10,7 +10,7 @@
 <body>
   <div class='card'>
     <div class="inner" id='inner'>
-      <div class="front">
+      <div class="front" id='front'>
         <label for="num">Type in a number:</label>
         <br />
         <br />
@@ -20,9 +20,10 @@
         <br />
         <button onclick="lottery()">Submit</button>
       </div>
-      <div class="back">
+      <div class="back" id='back'>
         <h3>Your winning numbers are:&nbsp;</h3>
         <p id='output'>&nbsp;</p>
+        <button onclick="reset()">Try Again</button>
       </div>
     </div>
   </div>

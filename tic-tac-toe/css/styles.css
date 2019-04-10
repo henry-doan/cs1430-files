@@ -1,0 +1,39 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#board {
+  width: 630px;
+  height: 630px;
+  margin: 0 auto;
+}
+
+div[id^="row-"] {
+  overflow: hidden;
+  float: clear;
+}
+
+div[id^="row-"] div {
+  border: 5px solid black;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  float: left;
+}
+
+div#row-1 div {
+  border-top: none;
+}
+
+div#row-3 div {
+  border-bottom: none;
+}
+
+div[id^='row-'] div:first-child {
+  border-left: none
+}
+
+div[id^='row-'] div:last-child {
+  border-right: none
+}

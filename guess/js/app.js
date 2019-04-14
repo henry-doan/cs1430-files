@@ -1,19 +1,12 @@
-function randomNum() {
-  return (Math.floor(Math.random() * 99) + 1)
-}
+var rightNum = Math.floor(Math.random() * 99) + 1
+var guesses = 0; 
 
-function guessing() {
-  var num = randomNum()
-
-  logic(num)
-}
-
-function logic(rightNum) {
+function logic() {
+  guesses++
   var userGuess = document.getElementById('guess').value
   var regex = /^[0-9]+$/;
 
-  console.log(rightNum)
-  if (!userGuess.match(regex) || userGuess === '') {
+  if (!userGuess.match(regex) || userGuess === '' || userGuess > 99) {
     img('nan')
   } else if (userGuess > rightNum) {
     img('high')
@@ -30,7 +23,7 @@ function img(result) {
 
   switch(result) {
     case 'win':
-      msg.innerText = 'Winner! Play again?'
+      msg.innerText = `Winner! You got the number ${rightNum} in ${guesses} guesses! Play again?`
       image.src = './img/1850893_2.jpg'
       break
     case 'high':
@@ -45,4 +38,8 @@ function img(result) {
       msg.innerText = 'Sorry it looks like you entered a invalid input'
       image.src = './img/photo-1543702883-c93cb11519d3.jpeg'
   }
+}
+
+function reset() {
+  location.reload()
 }

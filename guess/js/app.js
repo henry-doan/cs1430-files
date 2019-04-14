@@ -6,6 +6,8 @@ function logic() {
   var userGuess = document.getElementById('guess').value
   var regex = /^[0-9]+$/;
 
+  // test code 
+  // console.log(rightNum)
   if (!userGuess.match(regex) || userGuess === '' || userGuess > 99) {
     img('nan')
   } else if (userGuess > rightNum) {
@@ -20,11 +22,14 @@ function logic() {
 function img(result) {
   var image = document.getElementById('image')
   var msg = document.getElementById('message')
+  var btn = document.getElementById("btn")
 
   switch(result) {
     case 'win':
       msg.innerText = `Winner! You got the number ${rightNum} in ${guesses} guesses! Play again?`
       image.src = './img/1850893_2.jpg'
+      btn.innerText = "Play Again"
+      btn.onclick = function () { reset() }
       break
     case 'high':
       msg.innerText = 'Too High! Guess again'

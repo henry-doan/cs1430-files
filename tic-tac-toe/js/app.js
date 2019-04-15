@@ -1,14 +1,26 @@
-// names
 
-// turns tracker
+var markers = ["X", "O"]
 
-// markers
+var turn = 0
 
-// results
+var players = []
 
-// logic
+players[0] = prompt("enter p1")
+players[1] = prompt("enter p2")
+
+setTimeout( function () { 
+  document.getElementById("title").innerText = "It's " + players[turn] + " Turn" 
+}, 1000)
 
 function start(choice) {
-  choice.innerText = 'X';
-  choice.innerText = 'O';
+  choice.innerText = markers[turn];
+
+  if (turn == 0) {
+    turn = 1;
+  } else {
+    turn = 0;
+  }
+
+  choice.removeAttribute("onclick")
+  document.getElementById("title").innerText = "It's " + players[turn] + " Turn"
 }

@@ -13,8 +13,8 @@ document.getElementById('p2Tally').innerHTML = winCount[1]
 
 if (players.length == 0) {
   // let user typ in own names
-  players[0] = prompt("enter p1")
-  players[1] = prompt("enter p2")
+  players[0] = prompt("Who is X")
+  players[1] = prompt("Who is O")
 
   // set default to if they enter empty strings
   if (players[0] === "") {

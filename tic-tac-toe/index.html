@@ -5,10 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <h1 id='title'>Tic Tac Toe</h1>
+  <div class='row'>
+    <div class='column'>
+      <button id="resetBtn" onclick="reset()">Reset</button>
+    </div>
+    <div class='column tally'>
+      <table>
+        <tr>
+          <th id='p1'>&nbsp;</th>
+          <th id='p2'>&nbsp;</th>
+        </tr>
+        <tr>
+          <td id='p1Tally'>&nbsp;</td>
+          <td id='p2Tally'>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
   <div id="board">
     <div id="row-1">
       <div onclick="start(this, 1)"></div> <div onclick="start(this, 2)"></div> <div onclick="start(this, 4)"></div>

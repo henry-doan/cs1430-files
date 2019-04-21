@@ -2,6 +2,12 @@
   user-select: none;
 }
 
+html {
+  font-family: 'Permanent Marker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: black;
+}
+
 h1 {
   font-size: 50px;
   text-align: center;
@@ -19,12 +25,12 @@ div[id^="row-"] {
 }
 
 div[id^="row-"] div {
-  border: 5px solid black;
+  border: 5px solid white;
   height: 200px;
   width: 200px;
   display: inline-block;
   float: left;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Permanent Marker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 150px;
   text-align: center;
 }
@@ -38,9 +44,37 @@ div#row-3 div {
 }
 
 div[id^='row-'] div:first-child {
-  border-left: none
+  border-left: none;
 }
 
 div[id^='row-'] div:last-child {
-  border-right: none
+  border-right: none;
+}
+
+#resetBtn {
+  display: none;
+  float: right;
+}
+
+#tally {
+  float: left;
+  text-align: center;
+}
+
+table {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }

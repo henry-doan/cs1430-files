@@ -1,83 +1,93 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Georgia, serif;
+  font: 20px 'Dosis', Montserrat, sans-serif;
 }
 
-.img-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/doan/image/upload/v1547661446/hextile_tkou1b.png");
-  height: 50%;
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+  color: #3D79F2 !important;
+}
+
+p {
+  font-size: 16px;
+}
+
+.margin {
+  margin-bottom: 45px;
+}
+
+.bg-1 {
+  background-color: #59C6D1;
+}
+
+.bg-1-img {
+  background-image: url("./img/Shard.png");
+  height: 80%;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-.img-section-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.bg-2 {
+  background-color: #3D79F2;
+}
+
+.bg-3 {
+  background-color: #82B0D9;
+}
+
+.bg-4 {
+  background-color: #3D79F2;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+  color: #3D79F2 !important;
+}
+
+.bg-4 a {
   color: white;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.carousel img{
+  width: 100% !important;
 }
 
-.home-nav {
-  float: left;
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
 }
 
-nav li {
-  float: right;
+iframe {
+  width: 100%;
+  height: 500px;
 }
 
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #111;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  padding: 20px 50px;
-}
-
-.container > div {
-  margin: 10px;
-  text-align: center;
-}
-
-.profile {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
-}
-
-.profile:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.profile-content {
-  margin-bottom: 5px;
-}
-
-img {
-  border-radius: 5px 5px 0 0;
-}
 
 i {
   font-size: 3rem;
@@ -112,9 +122,4 @@ i {
 .center {
   margin: 0 40%;
   text-align: center;
-}
-
-.bacon-center {
-  max-width: 500px;
-  margin: auto;
 }

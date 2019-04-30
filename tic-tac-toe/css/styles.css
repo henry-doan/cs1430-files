@@ -71,6 +71,19 @@ div[id^='row-'] div:last-child {
   background-color: rgba(0, 0, 0, 0);
   font-family: 'Permanent Marker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#Btn {
+  padding: 0.5em 0.75em;
+  border: 0.1em solid white;
+  font-size: 16px;
+  margin: 0 0.3em;
+  font-weight: 300;
+  width: 25%;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Permanent Marker', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 #resetBtn:hover {
   color: black;

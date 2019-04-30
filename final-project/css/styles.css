@@ -26,12 +26,20 @@ p {
   margin-bottom: 45px;
 }
 
+.white-txt {
+  color: white;
+}
+
+.blue-txt {
+  color: #82B0D9;
+}
+
 .bg-1 {
   background-color: #59C6D1;
 }
 
 .bg-1-img {
-  background-image: url("./img/Shard.png");
+  background-image: url("../img/Shard.png");
   height: 80%;
   background-position: center;
   background-size: cover;
@@ -47,7 +55,7 @@ p {
 }
 
 .bg-4 {
-  background-color: #3D79F2;
+  background-color: #2F3242;
 }
 
 .container-fluid {
@@ -73,53 +81,66 @@ p {
   color: white;
 }
 
-.carousel img{
-  width: 100% !important;
-}
-
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-  }
-}
-
 iframe {
   width: 100%;
   height: 500px;
 }
 
-
-i {
-  font-size: 3rem;
-  margin: 0 10px;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
+  margin: 8px 5px;
 }
 
-.fa-youtube-square {
-  background-color: white;
-  color: #f4511e;
-  opacity: 0.6;
-  transition: 0.3s;
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
 
-.fa-facebook-square {
-  background-color: white;
-  color: #4267B2;
-  opacity: 0.6;
-  transition: 0.3s;
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
 
-.fa-twitter-square {
-  background-color: white;
-  color: #1DA1F2;
-  opacity: 0.6;
-  transition: 0.3s;
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-.fa-youtube-square:hover, .fa-facebook-square:hover, .fa-twitter-square:hover {
-  opacity: 1
+.fa:hover {
+    opacity: 0.7;
 }
 
 .center {
   margin: 0 40%;
   text-align: center;
+}
+
+.reflection {
+  padding: 20px 15%;
+}
+
+canvas {
+  width: 80% !important;
+}
+
+.btn-welcome {
+  background-color:rgb(110, 205, 249);
+  color: white;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 0%;
+}
+
+.btn-welcome:hover {
+  background-color: white;
+  color:rgb(110, 205, 249); 
+  border: 2px solid rgb(110, 205, 249); 
+}
+
+.btn-info {
+  margin: 20px 10px;
 }

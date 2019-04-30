@@ -11,28 +11,33 @@ var winCount = [0,0]
 document.getElementById('p1Tally').innerHTML = winCount[0]
 document.getElementById('p2Tally').innerHTML = winCount[1]
 
-if (players.length == 0) {
-  // let user typ in own names
-  players[0] = prompt("Who is X")
-  players[1] = prompt("Who is O")
-
-  // set default to if they enter empty strings
-  if (players[0] === "") {
-    players[0] = 'Player 1'
-  } 
-  
-  if (players[1] === "") {
-    players[1] = 'Player 2'
+function playersStart() {
+  if (players.length == 0) {
+    // let user type in own names
+    players[0] = prompt("Who is X")
+    players[1] = prompt("Who is O")
   }
-  
-  // set tally names
-  document.getElementById('p1').innerHTML = players[0]
-  document.getElementById('p2').innerHTML = players[1]
+    
+    // set default to if they enter empty strings
+    if (players[0] === "") {
+      players[0] = 'Player 1'
+    } 
+    
+    if (players[1] === "") {
+      players[1] = 'Player 2'
+    }
+    
+    // set tally names
+    document.getElementById('p1').innerHTML = players[0]
+    document.getElementById('p2').innerHTML = players[1]
+
+    setTimeout( function () { 
+      title.innerText = "It's " + players[turn] + " Turn" 
+    }, 1000)
+
+    document.getElementById('Btn').style.display = 'none' 
 }
 
-setTimeout( function () { 
-  title.innerText = "It's " + players[turn] + " Turn" 
-}, 1000)
 
 function start(choice, boxValue) {
   if(!gameOver) {
